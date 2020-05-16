@@ -1,28 +1,44 @@
-Getting Started
+# Ani-React
+
+version 1.1.0
+
+## Getting Started
 
 ```
 npm i ani-react
 ```
 
-Usage
+### Usage
 
-     Component
-     ```
+#### Component
 
+```
 import Animate from "ani-react"
 import "ani-react/dist/animation.css"
 
 const App = ()=>{
 return <Animate>
 I am fading In
-
   </Animate>
 
 }
-
 ```
 
-     Hook
+##### Props
+
+| props            | value                                | available options                                             |
+| ---------------- | ------------------------------------ | ------------------------------------------------------------- |
+| `animation`      | default:fade / `string`              | animation or you can make you Own ending with `In` and `Out`  |
+| `enter`          | default:true / `boolean`             | `true,false`                                                  |
+| `duration`       | default:1000 / `number` / unit: `ms` | `number:any`                                                  |
+| `delay`          | default:0 / `number` / unit: `ms`    | `number:any`                                                  |
+| `fillMode`       | default:forwards / `string`          | `none,forwards,backwards,both,initial,inherit`                |
+| `timingFunction` | default:linear / `string`            | animation-timing-function css                                 |
+| `playState`      | default:runing / `string`            | `paused,running,initial,inherit`                              |
+| `direction`      | default:normal / `string`            | `normal,reverse,alternate,alternate-reverse,initial,inherit`, |
+| `count`          | default:initial / `string`           | can be `number` or `infinite,initial,inherit`                 |
+
+#### Hook
 
 ```
 
@@ -39,10 +55,9 @@ I am fading {enter?"in":"out"}
   </div>
 
 }
-
 ```
 
-    options
+##### options
 
 | option           | value                                |
 | ---------------- | ------------------------------------ |
@@ -56,7 +71,7 @@ I am fading {enter?"in":"out"}
 | `direction`      | default:normal / `string`            |
 | `count`          | default:initial / `string`           |
 
-Animations
+### Animations
 
 | name              |
 | ----------------- |
@@ -92,7 +107,14 @@ Animations
 | `rotateDownRight` |
 | `role`            |
 
-Author
+## Built With
 
-adel chamas
-```
+- [animate.css](https://github.com/animate-css/animate.css) - animate.css
+
+## Authors
+
+- **Adel Chamas** - _Initial work_ - [Adelchms96](https://github.com/adelchms96/ani-react)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
