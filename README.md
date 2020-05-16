@@ -33,6 +33,42 @@ Options
 | `direction`      | default:normal / `string`            |
 | `count`          | default:initial / `string`           |
 
+Animations
+
+| name              |
+| ----------------- |
+| `fade`            |
+| `fadeLeft`        |
+| `fadeRight`       |
+| `fadeUp`          |
+| `fadeDown`        |
+| `slideLeft`       |
+| `slideRight`      |
+| `slideUp`         |
+| `slideDown`       |
+| `zoom`            |
+| `zoomLeft`        |
+| `zoomRight`       |
+| `zoomDown`        |
+| `zoomUp`          |
+| `flipX`           |
+| `flipY`           |
+| `backLeft`        |
+| `backRight`       |
+| `backDown`        |
+| `backUp`          |
+| `bounce`          |
+| `bounceLeft`      |
+| `bounceRight`     |
+| `bounceUp`        |
+| `bounceDown`      |
+| `rotate`          |
+| `rotateUpLeft`    |
+| `rotateUpRight`   |
+| `rotateDownLeft`  |
+| `rotateDownRight` |
+| `role`            |
+
 Author
 
 adel chamas

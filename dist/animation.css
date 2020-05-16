@@ -2166,10 +2166,7 @@
     transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
   }
 }
-.animate__rollOut {
-  -webkit-animation-name: rollOut;
-  animation-name: rollOut;
-}
+
 /* Zooming entrances */
 @-webkit-keyframes zoomIn {
   from {
