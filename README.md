@@ -8,8 +8,10 @@ Usage
 
 ```
 import {useAnimation} from "ani-react"
+import "ani-react/dist/animation.css"
+
 const App = ()=>{
-  const {style,setEnter,enter} = useAnimation() // add your options
+  const {style,setEnter,enter,setOptions} = useAnimation() // add your options
 
   return <div style={style}>
   I am fading {enter?"in":"out"}
