@@ -6,22 +6,43 @@ npm i ani-react
 
 Usage
 
+     Component
+     ```
+
+import Animate from "ani-react"
+import "ani-react/dist/animation.css"
+
+const App = ()=>{
+return <Animate>
+I am fading In
+
+  </Animate>
+
+}
+
 ```
+
+     Hook
+
+```
+
 import {useAnimation} from "ani-react"
 import "ani-react/dist/animation.css"
 
 const App = ()=>{
-  const {style,setEnter,enter,setOptions} = useAnimation() // add your options
+const {style,setEnter,enter,setOptions} = useAnimation() // add your options
 
-  return <div style={style}>
-  I am fading {enter?"in":"out"}
-  <button onClick={()=>setEnter(!enter)}>{enter?"in":"out"}</button>
+return <div style={style}>
+I am fading {enter?"in":"out"}
+<button onClick={()=>setEnter(!enter)}>{enter?"in":"out"}</button>
+
   </div>
 
 }
+
 ```
 
-Options
+    options
 
 | option           | value                                |
 | ---------------- | ------------------------------------ |
@@ -74,3 +95,4 @@ Animations
 Author
 
 adel chamas
+```
