@@ -1,10 +1,10 @@
-#Getting Started
+Getting Started
 
 ```
 npm i ani-react
 ```
 
-#Usage
+Usage
 
 ```
 import {useAnimation} from "ani-react"
@@ -19,7 +19,7 @@ const App = ()=>{
 }
 ```
 
-#Options
+Options
 
 | option           | value                                |
 | ---------------- | ------------------------------------ |
@@ -33,6 +33,6 @@ const App = ()=>{
 | `direction`      | default:normal / `string`            |
 | `count`          | default:initial / `string`           |
 
-#Authors
+Author
 
-######adel chamas
+adel chamas
