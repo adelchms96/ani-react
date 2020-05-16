@@ -26,7 +26,7 @@ const useAnimate = (options = {}) => {
   const [enter, setEnter] = useState(options.enter || defaultOptions.enter);
   return {
     style: {
-      animationName: `${animation.className}${enter ? "In" : "Out"}`,
+      animationName: `${animation.name}${enter ? "In" : "Out"}`,
       animationDuration: `${animation.duration}ms`,
       animationDelay: `${animation.delay}ms`,
       animationFillMode: animation.fillMode,
