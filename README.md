@@ -31,6 +31,7 @@ I am fading In
 | `animation` | default:fade / `string`         | animation or you can make you Own ending with `In` and `Out` |
 | `enter`     | default:true / `boolean`        | `true,false`                                                 |
 | options     | check bellow options / `object` |                                                              |
+| React props |                                 |                                                              |
 
 ###### options
 
@@ -43,8 +44,6 @@ I am fading In
 | `playState`      | default:runing / `string`            | `paused,running,initial,inherit`                              |
 | `direction`      | default:normal / `string`            | `normal,reverse,alternate,alternate-reverse,initial,inherit`, |
 | `count`          | default:initial / `string`           | can be `number` or `infinite,initial,inherit`                 |
-
-and you can pass any of react props.
 
 #### Hook
 
@@ -81,39 +80,16 @@ I am fading {enter?"in":"out"}
 
 ### Animations
 
-| name              |
-| ----------------- |
-| `fade`            |
-| `fadeLeft`        |
-| `fadeRight`       |
-| `fadeUp`          |
-| `fadeDown`        |
-| `slideLeft`       |
-| `slideRight`      |
-| `slideUp`         |
-| `slideDown`       |
-| `zoom`            |
-| `zoomLeft`        |
-| `zoomRight`       |
-| `zoomDown`        |
-| `zoomUp`          |
-| `flipX`           |
-| `flipY`           |
-| `backLeft`        |
-| `backRight`       |
-| `backDown`        |
-| `backUp`          |
-| `bounce`          |
-| `bounceLeft`      |
-| `bounceRight`     |
-| `bounceUp`        |
-| `bounceDown`      |
-| `rotate`          |
-| `rotateUpLeft`    |
-| `rotateUpRight`   |
-| `rotateDownLeft`  |
-| `rotateDownRight` |
-| `role`            |
+| name                                                               |
+| ------------------------------------------------------------------ |
+| `fade,fadeLeft,fadeRight,fadeUp,fadeDown`                          |
+| `slideLeft,slideRight,slideUp,slideDown`                           |
+| `zoom,zoomLeft,zoomRight,zoomDown,zoomUp`                          |
+| `flipX,flipY`                                                      |
+| `backLeft,backRight,backDown,backUp`                               |
+| `bounce,bounceLeft,bounceRight,bounceUp,bounceDown`                |
+| `rotate,rotateUpLeft,rotateUpRight,rotateDownLeft,rotateDownRight` |
+| `role`                                                             |
 
 ## Built With
 
