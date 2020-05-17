@@ -12,6 +12,8 @@ npm i ani-react
 
 #### Component
 
+##### Example
+
 ```
 import Animate from "ani-react"
 import "ani-react/dist/animation.css"
@@ -47,13 +49,15 @@ I am fading In
 
 #### Hook
 
+##### Example
+
 ```
 
-import {useAnimation} from "ani-react"
+import {useAnimate} from "ani-react"
 import "ani-react/dist/animation.css"
 
 const App = ()=>{
-const {style,setEnter,enter,setOptions} = useAnimation() // add your options
+const {style,setEnter,enter,setOptions} = useAnimate() // add your options
 
 return <div style={style}>
 I am fading {enter?"in":"out"}
