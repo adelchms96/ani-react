@@ -26,10 +26,16 @@ I am fading In
 
 ##### Props
 
-| props            | value                                | available options                                             |
+| props       | value                           | available options                                            |
+| ----------- | ------------------------------- | ------------------------------------------------------------ |
+| `animation` | default:fade / `string`         | animation or you can make you Own ending with `In` and `Out` |
+| `enter`     | default:true / `boolean`        | `true,false`                                                 |
+| options     | check bellow options / `object` |                                                              |
+
+###### options
+
+| options          | value                                | available options                                             |
 | ---------------- | ------------------------------------ | ------------------------------------------------------------- |
-| `animation`      | default:fade / `string`              | animation or you can make you Own ending with `In` and `Out`  |
-| `enter`          | default:true / `boolean`             | `true,false`                                                  |
 | `duration`       | default:1000 / `number` / unit: `ms` | `number:any`                                                  |
 | `delay`          | default:0 / `number` / unit: `ms`    | `number:any`                                                  |
 | `fillMode`       | default:forwards / `string`          | `none,forwards,backwards,both,initial,inherit`                |
@@ -37,6 +43,8 @@ I am fading In
 | `playState`      | default:runing / `string`            | `paused,running,initial,inherit`                              |
 | `direction`      | default:normal / `string`            | `normal,reverse,alternate,alternate-reverse,initial,inherit`, |
 | `count`          | default:initial / `string`           | can be `number` or `infinite,initial,inherit`                 |
+
+and you can pass any of react props.
 
 #### Hook
 
