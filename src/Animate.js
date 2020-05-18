@@ -10,7 +10,7 @@ const Animate = ({
   children,
   ...props
 }) => {
-  const [mount, setMount] = useState(true);
+  const [mount, setMount] = useState(false);
   const style = {
     animationName: `${animation}${enter ? "In" : "Out"}`,
     animationDuration: `${options.duration}ms`,
@@ -21,12 +21,13 @@ const Animate = ({
     animationDirection: options.direction,
     animationIterationCount: options.count
   };
+
   useEffect(() => {
-    if (!mount) setMount(true);
+    if (enter) setMount(true);
   }, [enter]);
   return (
     <>
-      {mount && (
+      {mount(
         <div
           {...props}
           style={style}
