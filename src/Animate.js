@@ -25,19 +25,15 @@ const Animate = ({
   useEffect(() => {
     if (enter) setMount(true);
   }, [enter]);
-  return (
-    <>
-      {mount(
-        <div
-          {...props}
-          style={style}
-          onAnimationEnd={() => !enter && unMountOnExit && setMount(false)}
-        >
-          {children}
-        </div>
-      )}
-    </>
-  );
+  return mount || !unMountOnExit ? (
+    <div
+      {...props}
+      style={style}
+      onAnimationEnd={() => !enter && unMountOnExit && setMount(false)}
+    >
+      {children}
+    </div>
+  ) : null;
 };
 
 Animate.protoTypes = {
