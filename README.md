@@ -28,12 +28,13 @@ I am fading In
 
 ##### Props
 
-| props       | value                           | available options                                            |
-| ----------- | ------------------------------- | ------------------------------------------------------------ |
-| `animation` | default:fade / `string`         | animation or you can make you Own ending with `In` and `Out` |
-| `enter`     | default:true / `boolean`        | `true,false`                                                 |
-| options     | check bellow options / `object` |                                                              |
-| React props |                                 |                                                              |
+| props           | value                           | available options                                            |
+| --------------- | ------------------------------- | ------------------------------------------------------------ |
+| `animation`     | default:fade / `string`         | animation or you can make you Own ending with `In` and `Out` |
+| `enter`         | default:true / `boolean`        | `true,false`                                                 |
+| `unMountOnExit` | default:false / `boolean`       | `true,false`                                                 |
+| options         | check bellow options / `object` |                                                              |
+| React props     |                                 |                                                              |
 
 ###### options
 
